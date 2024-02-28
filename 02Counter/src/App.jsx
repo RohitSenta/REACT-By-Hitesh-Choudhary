@@ -11,7 +11,11 @@ function App() {
   const addValue = () => {
     // counter = counter + 1;
     if(counter < 20) {
-      setCounter(counter + 1);
+      // setCounter(counter + 1);
+      // setCounter(counter + 1);
+      setCounter((prevCount) => prevCount + 1);
+      setCounter((prevCount) => prevCount + 1);
+
     } else {
       setCounter(20);
     }
@@ -21,7 +25,11 @@ function App() {
   const removeValue = () => {
     // counter = counter - 1;
     if(counter > 0){
-      setCounter(counter - 1);
+      // setCounter(counter - 1);
+      // setCounter(counter - 1);
+
+      setCounter((prevCount) => prevCount - 1);
+      setCounter((prevCount) => prevCount - 1);
     } else {
       setCounter(0);
     }
