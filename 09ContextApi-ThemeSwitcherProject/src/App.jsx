@@ -23,10 +23,6 @@ function App() {
 
 	return (
 		<>
-			{/* <h1 className="p-4 bg-purple-400 rounded text-3xl">
-				Context API - Theme Switcher Project
-			</h1> */}
-
 			<ThemeProvider value={{ themeMode, lightTheme, darkTheme }}>
 				<div className="flex flex-wrap min-h-screen items-center">
 					<div className="w-full">
